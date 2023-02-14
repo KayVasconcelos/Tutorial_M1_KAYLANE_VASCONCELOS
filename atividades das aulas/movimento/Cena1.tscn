@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://imagens/carro.png" type="Texture" id=1]
+[ext_resource path="res://imagens/istockphoto-1222735192-170667a.jpg" type="Texture" id=2]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50.5, 53 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Istockphoto-1222735192-170667a" type="Sprite" parent="."]
+position = Vector2( 511, 299 )
+scale = Vector2( 1.4154, 1.44583 )
+texture = ExtResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 64, 375 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 0, -3 )
+shape = SubResource( 1 )
+
+[node name="Carro" type="Sprite" parent="KinematicBody2D"]
+rotation = -3.14159
+scale = Vector2( 0.201632, 0.207833 )
+texture = ExtResource( 1 )
