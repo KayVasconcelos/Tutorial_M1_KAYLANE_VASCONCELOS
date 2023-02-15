@@ -31,7 +31,7 @@ margin_left = 415.0
 margin_top = 44.0
 margin_right = 589.0
 margin_bottom = 61.0
-text = "Digìte seu nome:"
+text = "Digìte seu nome :"
 align = 1
 
 [node name="nome" type="LineEdit" parent="."]
