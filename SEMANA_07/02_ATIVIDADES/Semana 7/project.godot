@@ -11,7 +11,15 @@ config_version=4
 [application]
 
 config/name="Semana 7"
+run/main_scene="res://Cenas/Tela_Inicial.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1300
+window/size/height=770
+window/size/test_width=1920
+window/size/test_height=1080
 
 [gui]
 

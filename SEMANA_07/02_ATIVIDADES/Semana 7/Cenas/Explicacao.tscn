@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Cenas/scripts/explicacao.gd" type="Script" id=1]
+[ext_resource path="res://Imagens/fundo_fase.jpeg" type="Texture" id=2]
+[ext_resource path="res://Imagens/seta.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/texto_explicacao.png" type="Texture" id=4]
+
+[node name="Explicacao" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="FundoFase" type="Sprite" parent="."]
+position = Vector2( 692.5, 351.25 )
+scale = Vector2( 2.22524, 1.69664 )
+texture = ExtResource( 2 )
+
+[node name="Botao_seta" type="TextureButton" parent="."]
+margin_left = 53.0
+margin_top = 22.0
+margin_right = 160.0
+margin_bottom = 168.0
+
+[node name="Seta" type="Sprite" parent="Botao_seta"]
+position = Vector2( 39.8125, 88.7316 )
+scale = Vector2( 0.101237, 0.122719 )
+texture = ExtResource( 3 )
+
+[node name="TextoExplicacao" type="Sprite" parent="."]
+position = Vector2( 668.5, 379 )
+scale = Vector2( 0.488021, 0.466204 )
+texture = ExtResource( 4 )
+
+[connection signal="pressed" from="Botao_seta" to="." method="_on_Botao_seta_pressed"]
