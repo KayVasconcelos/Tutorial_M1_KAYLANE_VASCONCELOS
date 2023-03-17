@@ -24,8 +24,8 @@ font_data = ExtResource( 10 )
 script = ExtResource( 3 )
 
 [node name="FundoFase" type="Sprite" parent="."]
-position = Vector2( 649.5, 348.75 )
-scale = Vector2( 2.08466, 1.68465 )
+position = Vector2( 647.501, 366.25 )
+scale = Vector2( 2.07827, 1.76858 )
 texture = ExtResource( 1 )
 
 [node name="Botao_seta" type="TextureButton" parent="."]
